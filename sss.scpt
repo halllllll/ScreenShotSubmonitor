@@ -26,7 +26,7 @@ set textItem to all_file as text
 set AppleScript's text item delimiters to defaultDelimit
 set concat_path to textItem
 -- スクショ
-set command to "screencapture " & concat_path
+set command to "screencapture -x " & concat_path
 do shell script command
 -- 実際にはメインディスプレイのは要らないので消去
 -- 亡霊を残さないために数秒待つ まあ残ってたら再起すりゃ消えるから
